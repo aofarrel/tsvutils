@@ -18,6 +18,6 @@ if [[ "$extension" == "tsv" ]]; then
 elif [[ "$extension" == "csv" ]]; then
   awk -F ',' "{print \$$column_number}" "$1"
 else
-  echo "Unknown file type"
+  echo "Unknown file type, check extension"
 fi
 
