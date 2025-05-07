@@ -6,7 +6,7 @@ input_file="$1"
 column_number="$2"
 extension="${input_file##*.}"
 
-if [ -z "$1" ]; then
+if [ $# -eq 0 ]; then
   echo "Usage: $0 <csv_or_tsv_file> <column_number>"
   echo "Column numbering is 1-indexed (eg, first column is 1)"
   echo "Input file is expected to end in .tsv or .csv"
