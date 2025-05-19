@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Equalize the number of tabs in a TSV file. Useful for TSVs with trailing columns
-# that you need to feed into polars or other similarly picky parsers.
+# Equalize the number of tabs in a TSV file by adding ADDITIONAL tabs
+# to lines that are lacking columns
 
 input_file="$1"
 temp_file="${input_file}.tmp"
